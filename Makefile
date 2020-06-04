@@ -1,5 +1,4 @@
-default: software hardware
-	git checkout master
+default: cv.pdf
 
 software:
 	git checkout software
@@ -13,3 +12,4 @@ hardware:
 
 cv.pdf:
 	latexmk -pdf cv
+	latexmk -pdf pandp
