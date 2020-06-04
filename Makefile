@@ -11,5 +11,5 @@ hardware:
 	make cv.pdf
 	mv cv.pdf "Sachin More (hardware)".pdf
 
-cv.pdf: cv.tex
+cv.pdf:
 	latexmk -pdf cv
