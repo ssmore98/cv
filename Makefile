@@ -3,6 +3,7 @@ default:
 	@make ${BRANCH}
 
 master:
+	git checkout master
 	git pull
 	make cv.pdf
 	mv cv.pdf "Sachin More".pdf
