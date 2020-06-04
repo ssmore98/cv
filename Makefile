@@ -1,5 +1,8 @@
+BRANCH=`git rev-parse --abbrev-ref HEAD`
 default:
-	git checkout master
+	@make ${BRANCH}
+
+master:
 	git pull
 	make cv.pdf
 	mv cv.pdf "Sachin More".pdf
