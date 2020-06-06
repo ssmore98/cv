@@ -1,0 +1,109 @@
+\documentclass[10pt]{article}
+\usepackage[colorlinks=false]{hyperref}
+\usepackage{pifont}
+\usepackage{longtable}
+\usepackage[width=7in,height=9in]{geometry}
+\pagestyle{empty}
+\begin{document}
+\begin{center}
+{\bf \Large SACHIN MORE} \\
+141 Howard Street, Northborough, MA 01532-1316 \\
+{\ding{38} \em +1-508-335-6351} \\
+{\em sachinsureshmore@gmail.com}
+\end{center}
+\rule{\textwidth}{1pt}
+%\begin{center}
+%{\bf SUMMARY}
+%\end{center}
+
+\begin{longtable}{p{91pt}p{390pt}}
+\\\multicolumn{2}{p{493pt}}{
+    \begin{itemize}
+        \item 20+ years of experience as software developer
+        \item Hands-on problem solving skills in difference areas
+        \item Strong algorithms and data structures background specializing
+            in performance optimization
+        \item A strong record of innovation with more than twenty patents
+    \end{itemize}
+}\\
+\\\\
+{\bf Skills}           & C/C++, Python, Linux, GitLab, Jira,
+RTOS, Simulation Software, Performance Analysis, Optimization Algorithms,
+System Software, Cross-functional Communication\\\\
+{\bf Accomplishments}  & {\bf Storage System Firmware}\\
+                       & {New ideas were proposed, implemented and evaluated to improve various parts of 
+                          the EMC Symmetrix storage array microcode. Some ideas made
+                          fundamental changes to how the product works:
+                          \begin{itemize}
+                              \item The underlying data structures were changed to
+                                  allow the code to quickly locate dirty data in cache that
+                                  was no longer useful. (U.S. patents 6,865,648 and 7,437,515)
+                              \item A new alogorithm was designed to decide which copy of the data
+                                  to read when multiple copies are present to distribute the
+                                  read activity evenly across the resources. (U.S. patent 6,954,833)
+                              \item A new cache management system was implemented to replace the existing
+                                  multi-LRU cache to improve parallel access to the shared memory cache. (U.S. patent 7,177,853)
+                          \end{itemize}
+                          Others were incremental changes:
+                          \begin{itemize}
+                              \item The multi-LRU caching mechanism was modified to strike a better balance
+                                  between the performance (retaining frequently accessed data) and the cost
+                                  (memory accesses needed to retain data in the cache). (U.S. patent 6,715,039)
+                              \item The existing data pre-fetching algorithm was enhanced for the cases where
+                                  workloads contain short bursts of contigous data accesses. (U.S. patent 6,721,870)
+                              \item The RAID data rebuild algorithm was modified to improve 
+                                  its performance when the storage system is under heavy load (U.S. patent 7,406,574)
+                          \end{itemize}
+                          The development was done in C under a proprietary
+                          BSD-derived RTOS and toolchain. The algorithms and data structures used were chosen
+                          based on both space and time efficiency.}\\
+                          \\
+                          \newpage
+                       & {\bf Simulation Software}\\
+                       & {
+                          \begin{itemize}
+                              \item {\em Cache Simulator} This software simulated the behaviour of the 
+                                  shared memory cache model used by the EMC Symmetrix/VMAX storage system.
+                              \item {\em Hard Disk Drive Simulator} This software simulated the different
+                                  hard disk drives used by the EMC Symmetrix/VMAX storage system.
+                              \item {\em Metadata Paging Simulator} This software simulated the metadata paging
+                                  mechanism used by the EMC Symmetrix/VMAX storage system.
+                          \end{itemize}
+                          These applications were used to validate proposed optimization techniques for the
+                          EMC Symmetrix/VMAX storage system. They were written in C++ for Fedora Linux.}\\
+                     \\
+                       & {\bf Software Appliances}\\
+                       & {These appliances were based on CentOS Linux and were written using C++/GTK.
+                     \begin{itemize}
+                         \item The {\em Secure Erase Appliance for SSDs} was
+                             part of the launch of SSDs in the EMC storage products lineup.
+                             The appliance is used by the {\em EMC certified secure erase service} to
+                             decommission/re-purpose SSDs in the field. The design emphasis was on
+                             data security and the appliance was validated and certified by
+                             an independent third party authority.
+                         \item The {\em Disk Cloning Appliance} was used for bulk
+                             replacement of faulty disks in a storage array. The appliance allows the
+                             storage array to function normally while the drives are being replaced.
+                             The design emphasis was on speed and accuracy. 150 appliance instances
+                             were used to replace several hundred thousand
+                             drives in storage arrays across the globe in little over a year.
+                 \end{itemize}}\\
+                       & {\bf Hardware Component Qualification Software}\\
+                       & {The hardware component qualification process used Python scripts running under Centos Linux.
+                          The scripts tested:
+                          \begin{itemize}
+                              \item Hard disk drives
+                              \item Solid state drives
+                              \item Fibre channel and SAS HBAs
+                              \item Ethernet NICs
+                              \item Infiniband HBAs.
+                          \end{itemize}
+
+                          This software also included an I/O driver for doing long-term testing of disk drives. It was written in C
+                          and ran on Centos Linux.
+                              }\\
+                      \\
+\end{longtable}
+\newpage
+\include{eande}
+\end{document}
