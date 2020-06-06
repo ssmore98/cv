@@ -7,3 +7,7 @@
 *.out
 .nfs*
 *.pdf
+*.dvi
+*.ps
+*.bbl
+*.blg
