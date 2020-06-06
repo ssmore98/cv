@@ -1,23 +1,10 @@
-\documentclass[10pt]{article}
-\usepackage[colorlinks=false]{hyperref}
-\usepackage{pifont}
-\usepackage{longtable}
-\usepackage[width=7in,height=9in]{geometry}
-\pagestyle{empty}
-\begin{document}
-\begin{center}
-{\bf \Large SACHIN MORE} \\
-141 Howard Street, Northborough, MA 01532-1316 \\
-{\ding{38} \em +1-508-335-6351} \\
-{\em sachinsureshmore@gmail.com}
-\end{center}
-\rule{\textwidth}{1pt}
-%\begin{center}
-%{\bf SUMMARY}
-%\end{center}
-
-\begin{longtable}{p{91pt}p{390pt}}
-\\\multicolumn{2}{p{493pt}}{
+\documentclass[10pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{black}
+\nopagenumbers{}
+\usepackage[scale=0.75]{geometry}
+\include{contact}
+\quote{
     \begin{itemize}
         \item 20+ years of experience as software developer
         \item Hands-on problem solving skills in difference areas
@@ -25,13 +12,18 @@
             in performance optimization
         \item A strong record of innovation with more than twenty patents
     \end{itemize}
-}\\
-\\\\
-{\bf Skills}           & C/C++, Python, Linux, GitLab, Jira,
-RTOS, Simulation Software, Performance Analysis, Optimization Algorithms,
-System Software, Cross-functional Communication\\\\
-{\bf Accomplishments}  & {\bf Storage System Firmware}\\
-                       & {New ideas were proposed, implemented and evaluated to improve various parts of 
+}
+\begin{document}
+\makecvtitle
+\section{Skills} 
+\cvitem{Programming Languages}{C/C++, Python}
+\cvitem{Operating Systems}{Linux, RTOS}
+\cvitem{Development Tools}{GitLab, Jira, make}
+\cvitem{}{Simulation Software, Performance Analysis, Optimization Algorithms,
+System Software, Cross-functional Communication}
+
+\section{Accomplishments} 
+\cvitem{Storage System Firmware}{New ideas were proposed, implemented and evaluated to improve various parts of 
                           the EMC Symmetrix storage array microcode. Some ideas made
                           fundamental changes to how the product works:
                           \begin{itemize}
@@ -56,11 +48,8 @@ System Software, Cross-functional Communication\\\\
                           \end{itemize}
                           The development was done in C under a proprietary
                           BSD-derived RTOS and toolchain. The algorithms and data structures used were chosen
-                          based on both space and time efficiency.}\\
-                          \\
-                          \newpage
-                       & {\bf Simulation Software}\\
-                       & {
+                          based on both space and time efficiency.}
+\cvitem{Simulation Software}{
                           \begin{itemize}
                               \item {\em Cache Simulator} This software simulated the behaviour of the 
                                   shared memory cache model used by the EMC Symmetrix/VMAX storage system.
@@ -70,10 +59,9 @@ System Software, Cross-functional Communication\\\\
                                   mechanism used by the EMC Symmetrix/VMAX storage system.
                           \end{itemize}
                           These applications were used to validate proposed optimization techniques for the
-                          EMC Symmetrix/VMAX storage system. They were written in C++ for Fedora Linux.}\\
-                     \\
-                       & {\bf Software Appliances}\\
-                       & {These appliances were based on CentOS Linux and were written using C++/GTK.
+                          EMC Symmetrix/VMAX storage system. They were written in C++ for Fedora Linux.}
+\cvitem{Software Appliances}
+                       {These appliances were based on CentOS Linux and were written using C++/GTK.
                      \begin{itemize}
                          \item The {\em Secure Erase Appliance for SSDs} was
                              part of the launch of SSDs in the EMC storage products lineup.
@@ -87,9 +75,9 @@ System Software, Cross-functional Communication\\\\
                              The design emphasis was on speed and accuracy. 150 appliance instances
                              were used to replace several hundred thousand
                              drives in storage arrays across the globe in little over a year.
-                 \end{itemize}}\\
-                       & {\bf Hardware Component Qualification Software}\\
-                       & {The hardware component qualification process used Python scripts running under Centos Linux.
+                 \end{itemize}}
+\cvitem{Hardware Component Qualification Software}
+{The hardware component qualification process used Python scripts running under Centos Linux.
                           The scripts tested:
                           \begin{itemize}
                               \item Hard disk drives
@@ -98,12 +86,7 @@ System Software, Cross-functional Communication\\\\
                               \item Ethernet NICs
                               \item Infiniband HBAs.
                           \end{itemize}
-
                           This software also included an I/O driver for doing long-term testing of disk drives. It was written in C
-                          and ran on Centos Linux.
-                              }\\
-                      \\
-\end{longtable}
-\newpage
-\include{eande}
+                          and ran on Centos Linux.}
+\end{document}
 \end{document}
