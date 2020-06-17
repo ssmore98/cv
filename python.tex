@@ -1,0 +1,54 @@
+\documentclass[12pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{black}
+\nopagenumbers{}
+\usepackage[scale=0.75]{geometry}
+\include{contact}
+\title{Python Experience}
+\begin{document}
+\makecvtitle
+\section{Overview}
+\cvitem{}{
+My work at Infinidat Inc. involved (among other things) designing and 
+implementing hardware quelification processes for the off-the-shelf hardware
+components used to manufacture the flagship product. The hardware components
+included:
+\begin{itemize}
+\item x86-based Servers
+\item Fibre channel HBAs
+\item SAS HBAs
+\item Ethernet adapters (Gigabit and 10Gbps)
+\item Hard disk drives (SAS)
+\item Solid-state drives (SAS/SATA)
+\item Infiniband HBAs
+\end{itemize}
+}
+\section{Development Environment}
+\cvitem{}{
+The development and production platform was CentOS Linux 7. The development was done 
+in Python 2/3 (couple of low-level drivers were written C/C++). I was responsible
+for the development, maintenance and support of the software and involved in
+the qualification logistics for four years.}
+
+\section{Features}
+\cvitem{}{
+The software ran on Ubuntu Linux and used parallel and remote execution to test the
+components on the production system. Some important modules used included:}
+\cventry
+{}{threading}{}{}{}{For parallel execution of local compute-intensive tasks.}
+\cventry
+{}{subprocess}{}{}{}{For remote, parallel task execution over ssh and ipmi.}
+\cventry
+{}{httplib2}{}{}{}{For accessing REST APIs}
+\cventry
+{}{matplotlib, numpy, docx}{}{}{}{To prepare charts and reports.}
+\cventry
+{}{re}{}{}{}{For scraping command output.}
+\cventry
+{}{pickle, json, xml, tarfile, gzip}{}{}{}{To store results, configuration, program state etc.}
+\cventry
+{}{cron}{}{}{}{To keep track of log running tests}
+
+\end{document}
+
+
