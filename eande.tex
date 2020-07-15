@@ -40,6 +40,35 @@ Symmetrix Business Unit}
 \item  Design/simulate/implement/analyze performance improvements for EMC's storage system product
 \end{itemize}
 }
+\cventry{9/1996 - 6/2000}{Research Assistant}{Department of Electrical and Computer Engineering}
+{Northwestern University}{Evanston, IL}
+{\begin{itemize}
+	\item System administrator for an IBM SP2 and SGI Origin belonging to the 
+		Center for Parallel and Distributed Computing at Northwestern University.
+	\item Developed methods for efficient access to large objects in an object-oriented
+		database running on a distributed memory parallel computer.
+	\end{itemize}}
+\cventry{10/1994 - 8/1996}{Research Assistant}{Department of Electrical and
+Computer Engineering}{Syracuse University}{Syracuse, NY}{
+Designed and evaluated a multi-threaded runtime library for parallel I/O.
+It separated the compute and I/O tasks in two separate threads of control.
+Multi-threading in the design permits:
+\begin{itemize}
+	\item asynchronousI/O even if the
+underlying file system does not support asynchronous I/O
+\item  copy avoidance from the I/O thread to the compute thread by sharing address
+space 
+\item a capability to perform collective I/O asynchronously without 
+blocking the compute threads.
+\end{itemize}
+The library also implements collective I/O which maximize load balance and
+concurrency while reducing communication overhead in an integrated  fashion.
+The library was evaluated on IBM SP2 for various data distributions and
+access patterns. The results show that there is a tradeoff between the amount of
+concurrency in I/O and the buffer size designated for I/O; and there is an
+optimal buffer size beyond which benefits of larger requests diminish due to
+large communication overhead.}
+
 \section{Education}   
 \cventry{1996--2000}{Doctor of Philosophy}{Northwestern University}{Evanston, IL}{}{Computer Engineering}
 \cventry{1994--1996}{Master of Science}{Syracuse University}{Syracuse, NY}{}{Computer Engineering}
