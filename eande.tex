@@ -13,14 +13,15 @@
 		\item Designed and implemented hardware qualification processes for the
 			off-the-shelf hardware components used to manufacture the flagship
 			product. Hardware included x86-based Servers, Fibre channel HBAs,
-			SAS HBAs, Ethernet adapters (Gigabit and 10Gbps), Hard disk drives (SAS),
-			Solid-state drives (SAS/SATA) and Infiniband HBAs.
+			SAS HBAs, Ethernet adapters, Hard disk drives, Solid-state drives
+			and Infiniband HBAs. The development was done primarily in Python
+			on a CentOS Linux platform. The code was maintained under GitLab.
 		\item Participated in internal design and code reviews; engaged in
 			recurring calls with selected vendors. Followed up specific issues 
 			with vendors, including but not limited to, firmware bugs and
 			suspected design issues.
 		\item  Monitored the industry for new technologies.
-		\item Advised manufacturing division on Integration and Verification Testing (IVT).
+		\item Advised the manufacturing division on Integration and Verification Testing (IVT).
 	\end{itemize}
 }
 \cventry{4/2013 - 1/2016}{Consultant Technologist}{EMC Corporation}{Hopkinton, MA}{}
@@ -35,16 +36,21 @@
 			their performance in a RAID configuration. (U.S. Patent 8,375,187)
 		\item Designed a new data layout scheme for hard disk drives to improve
 			their performance in a tiered storage system. (U.S. Patents 8,838,887 and 8,976,636)
+			The scheme was implemented and tested using an I/O driver written
+			in C/C++ on CentOS Linux platform using the sg device driver.
 	\end{itemize}
 }
-\cventry{3/2012 - 4/2013}{Consulting Performance Engineer}{EMC Corporation}{Hopkinton, MA}{Innovation and Systems Engineering,
-Enterprise Storage Division}
+\cventry{3/2012 - 4/2013}{Consulting Performance Engineer}{EMC Corporation}{Hopkinton, MA}
+{Innovation and Systems Engineering, Enterprise Storage Division}
 {
 	\begin{itemize}
         \item Designed and implemented the {\em Disk Cloning Appliance} used for bulk
-            replacement of faulty disks in a storage array.
+            replacement of faulty disks in a storage array. The appliance was
+			developed in C++ under CentOS Linux and used GTK+ for the user
+			interface.
 		\item Developed a simulator to evaluate the proposed metadata paging
-			scheme in EMC VMAX Storage System.
+			scheme in EMC VMAX Storage System. The software was developed in
+			C++ on a CentOS Linux platform.
 	\end{itemize}
 }
 \cventry{12/2006 - 3/2012}{Principal Performance Engineer}{EMC Corporation}{Hopkinton, MA}{Innovation and Systems
@@ -53,8 +59,10 @@ Engineering, Enterprise Storage Division}
 	\begin{itemize}
 		\item Designed and implemented the {\em Secure Erase Appliance for SSDs}
 			for the {\em EMC certified secure erase service} as part of the
-			launch of SSDs in the EMC storage products lineup.
-		\item Part of the team that developed tiered storage software for
+			launch of SSDs in the EMC storage products lineup. The appliance was
+			developed in C++ under CentOS Linux and used GTK+ for the user
+			interface.
+		\item Member of the team that developed tiered storage software for
 			EMC VMAX marketed under the brand name FAST v1. (U.S. Patents
 			8,566,553 and 8,966,216)
 		\item Designed the disk performance modeling module for tiered storage
@@ -66,16 +74,18 @@ Engineering, Enterprise Storage Division}
 Symmetrix Business Unit}
 {
 	\begin{itemize}
-		\item Was part of the team that designed the new cache management subsystem in the EMC Symmetrix Storage System.
-			(U.S. Patent 7,177,853)
+		\item Was member of the team that designed the new cache management
+			subsystem in the EMC Symmetrix Storage System. (U.S. Patent 7,177,853)
 		\item Proposed, prototyped and evaluated modifications to the RAID data rebuild algorithm
 			in the EMC Symmetrix Storage System to improve its performance when
-			the storage system is under heavy load (U.S. patent 7,406,574)
+			the storage system is under heavy load (U.S. patent 7,406,574) The
+			development was done in C under a proprietary BSD-derived RTOS.
 		\item Maintained Cache Simulator software that simulated the behavior of the 
 			shared memory cache model used by the EMC Symmetrix/VMAX storage system.
+			The software was originally written in C. Ported it to C++.
 		\item Developed and maintained Hard Disk Simulator software that
 			simulated the behavior of different hard disk drives used by the
-			EMC Symmetrix/VMAX storage system.
+			EMC Symmetrix/VMAX storage system. The software was written in C++.
 	\end{itemize}
 }
 \cventry{8/2000 - 12/2003}{Senior Performance Engineer}{EMC Corporation}{Hopkinton, MA}{Performance Research Group,
@@ -89,15 +99,21 @@ Symmetrix Business Unit}
 {
 	\begin{itemize}
 		\item Proposed, prototyped and evaluated changes to how the EMC Symmetrix Storage System manages dirty data.
-			(U.S. patents 6,865,648 and 7,437,515)
+			(U.S. patents 6,865,648 and 7,437,515) The development was done in
+			C under a proprietary BSD-derived RTOS.
 		\item Proposed, prototyped and evaluated a new algorithm in the EMC Symmetrix Storage System schedules read
-			operations on disk drives in RAID-1 configuration. (U.S. patents 6,865,648 and 7,437,515)
+			operations on disk drives in RAID-1 configuration. (U.S. patents
+			6,865,648 and 7,437,515) The development was done in C under a
+			proprietary BSD-derived RTOS.
 		\item Proposed, prototyped and evaluated enhancement to the existing data pre-fetching algorithm
-			in the EMC Symmetrix Storage Systemm for the cases where workloads contain short bursts of 
-			contiguous data accesses. (U.S. patent 6,721,870)
+			in the EMC Symmetrix Storage System for the cases where workloads contain short bursts of 
+			contiguous data accesses. (U.S. patent 6,721,870) The development
+			was done in C under a proprietary BSD-derived RTOS.
 		\item Prototyped and evaluated changes to the multi-LRU caching mechanism int the EMC Symmetrix Storage
 			System to strike a better balance between the performance (retaining frequently accessed data) and the cost
-			(memory accesses needed to retain data in the cache). (U.S. patent 6,715,039)
+			(memory accesses needed to retain data in the cache).
+			(U.S. patent 6,715,039) The development was done in C under a
+			proprietary BSD-derived RTOS.
 	\end{itemize}
 }
 \cventry{9/1996 - 6/2000}{Research Assistant}{Department of Electrical and Computer Engineering}
@@ -106,12 +122,21 @@ Symmetrix Business Unit}
 	\item System administrator for an IBM SP2 and SGI Origin belonging to the 
 		Center for Parallel and Distributed Computing at Northwestern University.
 	\item Developed methods for efficient access to large objects in an object-oriented
-		database running on a distributed memory parallel computer.
+		database running on a distributed memory parallel computer. The
+		software was written in C++.
 	\end{itemize}}
 \cventry{10/1994 - 8/1996}{Research Assistant}{Department of Electrical and
 Computer Engineering}{Syracuse University}{Syracuse, NY}
-{Designed and evaluated a multi-threaded runtime library for parallel I/O that
-separated the compute and I/O tasks in two separate threads of control.}
+{Designed and evaluated a multi-threaded run-time library for parallel I/O that
+separated the compute and I/O tasks in two separate threads of control. The
+software was written in C.}
+\cventry{2/1994 - 7/1994}{Software Engineer}{Datamatics Ltd.}{Mumbai, India}{}
+{Worked on a document sharing system over WAN. The software was written in C.}
+\cventry{2/1993 - 1/1994}{System Executive}{Spectrum Business Support Pvt. Ltd.}
+{Mumbai, India}{}{Was member of a team that implemented a archive retrieval system.
+Wrote the communication layer of the software that connected the server running
+on a SUN system to the client PC over a telephone line. The software was
+written in C.}
 
 \section{Education}   
 \cventry{1996--2000}{Doctor of Philosophy}{Northwestern University}{Evanston, IL}{}{Computer Engineering}
