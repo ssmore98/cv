@@ -12,5 +12,4 @@ clean:
 	latexmk -C hardware
 	latexmk -C pandp
 	latexmk -C python
-	latexmk -C raytheon
 	latexmk -C cover-letter
