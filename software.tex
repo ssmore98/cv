@@ -5,81 +5,130 @@
 \usepackage[scale=0.79]{geometry}
 \input{contact}
 \quote{
-%    \begin{itemize}
-%        \item 20+ years of experience as software developer
-%        \item Hands-on problem solving skills in different areas
-%        \item Strong algorithms and data structures background specializing
-%            in performance optimization
-%        \item A strong record of innovation with more than twenty patents
-%    \end{itemize}
 }
 \begin{document}
 \makecvtitle
-%\section{Skills} 
-%\cvitem{Programming Languages}{C/C++, Python}
-%\cvitem{Operating Systems}{Linux, RTOS}
-%\cvitem{Development Tools}{GitLab, Jira, make}
-%\cvitem{}{Simulation Software, Performance Analysis, Optimization Algorithms,
-%System Software, Cross-functional Communication}
+\section{Skills}
+\cvitem{Programming Languages}{C/C++, Python}
+\cvitem{Operating Systems}{Linux}
+\cvitem{Development Tools}{gcc/g++, git, make}
+\cvitem{Areas}{Algorithms, Data Structures, Data Analytics, Deep Learning,
+	Simulation, Performance Analysis, Parallel and Distributed Computing,
+    Multi-threading}
 
-%\section{Accomplishments} 
-%\cvitem{Parallel Computing} {Worked on shared and distributed memory parallel computers like
-%	Intel Paragon (as part of master's thesis), IBM SP2 and SGI Origin
-%	(as part of doctoral thesis). Administered Center for Parallel and
-%	Distributed Computing's  IBM SP2 and SGI Origin at Northwestern
-%University. Familiar with Message Passing Interface (MPI) and MPI-IO.}
-%\cvitem{Storage System Firmware}{New ideas were proposed, implemented and evaluated to improve various parts of 
-%                          the EMC Symmetrix storage array microcode. Some ideas made
-%                          fundamental changes to how the product works:
-%                          \begin{itemize}
-%                              \item The underlying data structures were changed to
-%                                  allow the code to quickly locate dirty data in cache that
-%                                  was no longer useful. (U.S. patents 6,865,648 and 7,437,515)
-%                              \item A new algorithm was designed to decide which copy of the data
-%                                  to read when multiple copies are present to distribute the
-%                                  read activity evenly across the resources. (U.S. patent 6,954,833)
-%                              \item A new cache management system was implemented to replace the existing
-%                                  multi-LRU cache to improve parallel access to the shared memory cache. (U.S. patent 7,177,853)
-%                          \end{itemize}
-%                          Others were incremental changes:
-%                          \begin{itemize}
-%                              \item The multi-LRU caching mechanism was modified to strike a better balance
-%                                  between the performance (retaining frequently accessed data) and the cost
-%                                  (memory accesses needed to retain data in the cache). (U.S. patent 6,715,039)
-%                              \item The existing data pre-fetching algorithm was enhanced for the cases where
-%                                  workloads contain short bursts of contiguous data accesses. (U.S. patent 6,721,870)
-%                              \item The RAID data rebuild algorithm was modified to improve 
-%                                  its performance when the storage system is under heavy load (U.S. patent 7,406,574)
-%                          \end{itemize}
-%                          The development was done in C under a proprietary
-%                          BSD-derived RTOS and tool-chain. The algorithms and data structures used were chosen
-%                          based on both space and time efficiency.}
-%\cvitem{Simulation Software}{
-%                          \begin{itemize}
-%                              \item {\em Cache Simulator} This software simulated the behavior of the 
-%                                  shared memory cache model used by the EMC Symmetrix/VMAX storage system.
-%                              \item {\em Hard Disk Drive Simulator} This software simulated the different
-%                                  hard disk drives used by the EMC Symmetrix/VMAX storage system.
-%                              \item {\em Metadata Paging Simulator} This software simulated the metadata paging
-%                                  mechanism used by the EMC Symmetrix/VMAX storage system.
-%                          \end{itemize}
-%                          These applications were used to validate proposed optimization techniques for the
-%                          EMC Symmetrix/VMAX storage system. They were written in C++ for Fedora Linux.}
-%\cvitem{Software Appliances}
-%                       {These appliances were based on CentOS Linux and were written using C++/GTK.
-%                     \begin{itemize}
-%                 \end{itemize}}
-%\cvitem{Hardware Component Qualification Software}
-%{The hardware component qualification process used Python scripts running under Centos Linux.
-%                          The scripts tested:
-%                          \begin{itemize}
-%                              \item Hard disk drives
-%                              \item Solid state drives
-%                              \item Fibre channel and SAS HBAs
-%                              \item Ethernet NICs
-%                              \item Infiniband HBAs.
-%                          \end{itemize}
-%                          This software also included an I/O driver for doing long-term testing of disk drives. It was written in C
-%                          and ran on Centos Linux.}
-\input{eande}
+\section{Certifications}
+\cvitem{edX}{\href{https://courses.edx.org/certificates/6d0b889832c94649928465bef5342974}
+{DV0101EN: Visualizing Data with Python}}
+\cvitem{edX}{\href{https://courses.edx.org/certificates/c9d9d9ee599040b5836fe477100e2245}
+{DA0101EN: Analyzing Data with Python}}
+\cvitem{edX}{\href{https://courses.edx.org/certificates/e4ab2175ff03440899b2444ee6098ec1}
+{PY0101EN: Python Basics for Data Science}}
+\cvitem{edX}{\href{https://courses.edx.org/certificates/9160fffad96d4ce793e08ed62364f56e}
+{DS0101EN: Introduction to Data Science}}
+
+\section{Work Experience}
+
+\cventry{2/2016 - 3/2020}{Consultant Software Technologist}{Infinidat Inc.}
+{Waltham, MA} {Platform Research and Development}
+{
+	\begin{itemize}
+		\item Defined and implemented hardware qualification processes for
+			hardware components. The development was done in
+			\texttt{C/C++/Python} on a \texttt{CentOS Linux} platform. The code
+			was maintained under \texttt{GitLab}.
+		\item Implemented monitoring services for customer systems. The software
+			was written in \texttt{Python} and the data collection was done
+			in \texttt{JSON} over a \texttt{REST} API. The collected data was
+			analyzed and forecasts were provided to the upper management using
+			\texttt{Pandas}, \texttt{numpy} and \texttt{matplotlib}.
+	\end{itemize}
+}
+\cventry{4/2013 - 1/2016}{Consultant Technologist}{EMC Corporation}{Hopkinton, MA}{}
+{
+	\begin{itemize}
+		\item Invented an algorithm for scheduling I/Os to SSDs to improve
+			their performance in a RAID configuration.
+		\item Designed a new data layout scheme for hard disk drives to improve
+			their performance in a tiered storage system.
+			The scheme was implemented and tested using an I/O driver written
+			in \texttt{C/C++} on \texttt{CentOS Linux} platform using the \texttt{sg} device driver.
+	\end{itemize}
+}
+\cventry{3/2012 - 4/2013}{Consulting Performance Engineer}{EMC Corporation}{Hopkinton, MA}
+{Innovation and Systems Engineering, Enterprise Storage Division}
+{
+	\begin{itemize}
+        \item Proposed and implemented the {\em Disk Cloning Appliance} used for bulk
+            replacement of faulty disks in a storage array. The appliance was
+			developed in \texttt{C++} under \texttt{CentOS Linux} and used \texttt{GTK+} for the user
+			interface.
+		\item Implemented a simulator to evaluate the proposed metadata paging
+			scheme in EMC VMAX Storage System. The software was written in
+			\texttt{C++} on a \texttt{CentOS Linux} platform.
+	\end{itemize}
+}
+\cventry{12/2003 - 3/2012}{Principal Performance Engineer}{EMC Corporation}{Hopkinton, MA}{Innovation and Systems
+Engineering, Enterprise Storage Division}
+{
+	\begin{itemize}
+		\item Designed and implemented the {\em Secure Erase Appliance for SSDs}
+			for the {\em EMC certified secure erase service} as part of the
+			launch of SSDs in the EMC storage products lineup. The appliance was
+			developed in \texttt{C++} under \texttt{CentOS Linux} and used
+			\texttt{GTK+} for the user interface.
+		\item Proposed, prototyped and evaluated modifications to the RAID data rebuild algorithm
+			in the EMC Symmetrix Storage System to improve its performance when
+			the storage system is under heavy load. The
+			development was done in \texttt{C} under a proprietary BSD-derived RTOS.
+		\item Maintained Cache Simulator software that simulated the behavior of the
+			shared memory cache model used by the EMC Symmetrix/VMAX storage system.
+			The software was originally written in \texttt{C}. Ported it to \texttt{C++}.
+		\item Developed and maintained Hard Disk Simulator software that
+			simulated the behavior of different hard disk drives used by the
+			EMC Symmetrix/VMAX storage system. The software was written in \texttt{C++}.
+	\end{itemize}
+}
+\cventry{8/2000 - 12/2003}{Senior Performance Engineer}{EMC Corporation}{Hopkinton, MA}{Performance Research Group,
+Symmetrix Business Unit}
+{
+	\begin{itemize}
+		\item Proposed, prototyped and evaluated changes to how the EMC Symmetrix Storage System manages dirty data.
+			The development was done in \texttt{C} under a proprietary BSD-derived RTOS.
+		\item Proposed, prototyped and evaluated a new algorithm in the EMC Symmetrix Storage System schedules read
+			operations on disk drives in \texttt{RAID-1} configuration.
+			The development was done in \texttt{C} under a proprietary BSD-derived RTOS.
+		\item Proposed, prototyped and evaluated enhancement to the existing data pre-fetching algorithm
+			in the EMC Symmetrix Storage System for the cases where workloads contain short bursts of
+			contiguous data accesses. The development was done in \texttt{C} under a proprietary BSD-derived RTOS.
+		\item Prototyped and evaluated changes to the multi-LRU caching mechanism int the EMC Symmetrix Storage
+			System to strike a better balance between the performance (retaining frequently accessed data) and the cost
+			(memory accesses needed to retain data in the cache).
+			The development was done in \texttt{C} under a proprietary BSD-derived RTOS.
+	\end{itemize}
+}
+\cventry{9/1996 - 6/2000}{Research Assistant}{Department of Electrical and Computer Engineering}
+{Northwestern University}{Evanston, IL}
+{\begin{itemize}
+	\item System administrator for an IBM SP2 and SGI Origin belonging to the
+		Center for Parallel and Distributed Computing at Northwestern University.
+	\item Researched methods for efficient access to large objects in an object-oriented
+		database running on a distributed memory parallel computer. The
+		software was written in \texttt{C++}.
+	\end{itemize}}
+\cventry{10/1994 - 8/1996}{Research Assistant}{Department of Electrical and
+Computer Engineering}{Syracuse University}{Syracuse, NY}
+{Developed and evaluated a multi-threaded run-time library for parallel I/O that
+separated the compute and I/O tasks in two separate threads of control. The
+software was written in \texttt{C}.}
+\cventry{2/1994 - 7/1994}{Software Engineer}{Datamatics Ltd.}{Mumbai, India}{}
+{Worked on a document sharing system over WAN. The software was written in \texttt{C}.}
+\cventry{2/1993 - 1/1994}{System Executive}{Spectrum Business Support Pvt. Ltd.}
+{Mumbai, India}{}{Was member of a team that implemented a archive retrieval system.
+Wrote the communication layer of the software that connected the server running
+on a SUN system to the client PC over a telephone line. The software was
+written in \texttt{C}.}
+\section{Education}
+\cventry{1996--2000}{Doctor of Philosophy}{Northwestern University}{Evanston, IL}{}{Computer Engineering}
+\cventry{1994--1996}{Master of Science}{Syracuse University}{Syracuse, NY}{}{Computer Engineering}
+\cventry{1987--1991}{Bachelor of Engineering}{Savitribai Phule Pune University}{Pune, India}{}{Computer Engineering}
 \end{document}
