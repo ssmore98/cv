@@ -1,0 +1,71 @@
+\documentclass[busletter,dateno]{newlfm}
+\usepackage{etoolbox}
+
+\makeatletter
+\patchcmd{\@zfancyhead}{\fancy@reset}{\f@nch@reset}{}{}
+\patchcmd{\@set@em@up}{\f@ncyolh}{\f@nch@olh}{}{}
+\patchcmd{\@set@em@up}{\f@ncyolh}{\f@nch@olh}{}{}
+\patchcmd{\@set@em@up}{\f@ncyorh}{\f@nch@orh}{}{}
+\makeatother
+%\usepackage{kpfonts}
+\usepackage{fontawesome}
+%\usepackage{url}
+
+\widowpenalty=1000
+\clubpenalty=1000
+
+\newlfmP{headermarginskip=20pt}
+\newlfmP{sigsize=50pt}
+\newlfmP{dateskipafter=20pt}
+%\newlfmP{addrfromphone}
+%\newlfmP{addrfromemail}
+%\PhrPhone{Phone}
+%\PhrEmail{Email}
+
+\namefrom{Sachin More}
+\addrfrom{\today\\[10pt]
+		    141 Howard Street\\
+			Northborough, MA 01532
+}
+%\phonefrom{+1-508-335-6351}
+%\emailfrom{sachinsureshmore@gmail.com}
+
+%\addrto{%
+%Faculty Search Committee\\
+%Department of Computer Science\\
+%Clemson University\\
+%Clemson, SC 29634-0974}
+
+\greetto{To Whom It May Concern:}
+\closeline{Sincerely,}
+
+\begin{document}
+\begin{newlfm}
+Having read the description for your opening for a software engineer,
+I have determined that this position is one where I could make a positive
+contribution to Catalog.  Thus, I am pleased to share my resume.
+
+My understanding, from evaluating the responsibilities of the role and the
+objectives of your company, is that my background could be helpful in
+addressing your needs. Specifically, my training includes extensive experience
+with C/C++/Python programming and debugging skills. These have been my primary
+development languages Additionally, Linux was the primary development
+platform that I used for over two decades. Moreover, I was immersed in
+learning about computer system architecture and operating systems while at EMC
+and Infinidat, where I was immersed in system software development work. 
+
+Certainly, it is not just technical skills which I would bring to this role.
+My background has allowed me to understand the benefits of leadership and
+teamwork. It is undeniable, that I come to recognize that a willingness to
+exchange new ideas is critical to development. This has been essential to my
+analytical, problem-solving and decision-making skills. Indeed, these skills
+were maximized when I took the initiative to identify an enterprise grade 
+solid state drive to improve the performance of EMC's enterprise storage
+system. As a result, EMC Corporation became the first enterprise storage
+company to offer solid state disk storage. And I was honored with the EMC
+President's Award.
+
+Thank you for your consideration.  I welcome the opportunity to answer any
+questions you may have. 
+\end{newlfm}
+\end{document}
