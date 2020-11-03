@@ -1,4 +1,12 @@
 \documentclass[busletter,dateno]{newlfm}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@zfancyhead}{\fancy@reset}{\f@nch@reset}{}{}
+\patchcmd{\@set@em@up}{\f@ncyolh}{\f@nch@olh}{}{}
+\patchcmd{\@set@em@up}{\f@ncyolh}{\f@nch@olh}{}{}
+\patchcmd{\@set@em@up}{\f@ncyorh}{\f@nch@orh}{}{}
+\makeatother
+
 %\usepackage{kpfonts}
 \usepackage{fontawesome}
 %\usepackage{url}
