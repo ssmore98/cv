@@ -1,4 +1,4 @@
-default: Sachin\ More\ (h).pdf Sachin\ More\ (s).pdf Sachin\ More\ -\ Patents\ and\ Publications.pdf python.pdf cover-letter.pdf
+default: Sachin\ More\ (h).pdf Sachin\ More\ (s).pdf Sachin\ More\ -\ Patents\ and\ Publications.pdf python.pdf # cover-letter.pdf
 
 Sachin\ More\ (h).pdf: hardware.pdf 
 	cp $< "$@"
